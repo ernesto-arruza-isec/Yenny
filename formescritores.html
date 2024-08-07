@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yenny-Descubrí la mayor variedad de libros en nuestra librería online. Encontrá bestsellers, libros académicos, novelas, infantiles y más. Disfrutá de ofertas exclusivas y envíos a todo el país.">
+    <meta name="keywords" content="Yenny, librería online, libros, bestsellers, novelas, libros académicos, libros infantiles, ofertas en libros, envíos a todo el país, compra de libros, literatura, lectura">
+    <link rel="canonical" href="https://www.yenny-elateneo.com/">
+    <meta name="author" content="Ernesto Arruza">
+    <meta name="publisher" content="Ernesto Arruza">
+    <title>Yenny</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navegacion">
+        <div class="superior">
+            <p>
+                ENVÍO GRATIS EN PRODUCTOS SELECCIONADOS
+            </p>
+        </div>
+        <div class="inferior">
+            <div class="logo">
+                <a href="home.html"><img src="img/logo-de-yenny.png" alt="Logo Yenny"></a>
+            </div>
+            <div class="menu">
+                <a href="home.html #libros">LIBROS</a>
+                <a href="formescritores.html">ESCRITORES EMERGENTES</a>
+                <a>MEDIOS DE PAGO</a>
+            </div>
+            <div class="iconos">
+                <img src="img/icono-de-lupa.png" alt="Buscar">
+                <img src="img/icono-de-carrito.png" alt="Carrito">
+            </div>
+        </div>
+    </nav>
+    <article class="contenedor-formulario">
+        <div>
+            <form id="Formulario">
+                <h2>Queremos saber más de vos</h2>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre">
+                <label id="errorNombre" for="Nombre">Error nombre</label>
+
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" name="Apellido">
+
+                <label for="Mail">Mail</label>
+                <input type="email" id="Mail" name="Mail">
+
+                <label for="NombreObra">Nombre de tu obra</label>
+                <input type="text" id="NombreObra" name="NombreObra">
+
+                <label for="GeneroObra">Género de tu obra</label>
+                <input type="text" id="GeneroObra" name="GeneroObra">
+
+                <label for="PrecioObra">¿Qué precio aproximado le pondrías a tu obra?</label>
+                <input type="text" id="PrecioObra" name="PrecioObra">
+
+                <label for="IdiomaObra">Idioma/s de tu obra</label>
+                <input type="text" id="IdiomaObra" name="IdiomaObra">
+
+                <label for="EdadObra">Edad recomendada de tu obra</label>
+                <input type="number" id="EdadObra" name="EdadObra">
+
+                <label for="DescripcionObra">Contanos más de tu obra</label>
+                <textarea id="DescripcionObra" name="DescripcionObra"></textarea>
+
+                <button type="button" onclick="validarFormulario()" class="buttonform" href="formularioenviado.html">Enviar</button>
+            </form>
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="footer-izq">
+            <p>Patagones 2463 CABA GRUPO ILHSA S.A.</p>
+            <p>0810 33 39872</p>
+        </div>
+        <div class="footer-der">
+            <p>YouTube</p>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>X</p>
+            <p>TikTok</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
