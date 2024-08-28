@@ -45,38 +45,47 @@
         <div>
             <form id="Formulario">
                 <h2>Queremos saber más de vos</h2>
+    
                 <label for="Nombre">Nombre</label>
                 <input type="text" id="Nombre" name="Nombre">
-                <label id="errorNombre" for="Nombre">Error nombre</label>
-
+                <label id="errorNombre" class="error" for="Nombre">Error en el nombre</label>
+    
                 <label for="Apellido">Apellido</label>
                 <input type="text" id="Apellido" name="Apellido">
-
+                <label id="errorApellido" class="error" for="Apellido">Error en el apellido</label>
+    
                 <label for="Mail">Mail</label>
                 <input type="email" id="Mail" name="Mail">
-
+                <label id="errorMail" class="error" for="Mail">Error en el mail</label>
+    
                 <label for="NombreObra">Nombre de tu obra</label>
                 <input type="text" id="NombreObra" name="NombreObra">
-
+                <label id="errorNombreObra" class="error" for="NombreObra">Error en el nombre de la obra</label>
+    
                 <label for="GeneroObra">Género de tu obra</label>
                 <input type="text" id="GeneroObra" name="GeneroObra">
-
+                <label id="errorGeneroObra" class="error" for="GeneroObra">Error en el género de la obra</label>
+    
                 <label for="PrecioObra">¿Qué precio aproximado le pondrías a tu obra?</label>
                 <input type="text" id="PrecioObra" name="PrecioObra">
-
+                <label id="errorPrecioObra" class="error" for="PrecioObra">Error en el precio de la obra</label>
+    
                 <label for="IdiomaObra">Idioma/s de tu obra</label>
                 <input type="text" id="IdiomaObra" name="IdiomaObra">
-
+                <label id="errorIdiomaObra" class="error" for="IdiomaObra">Error en el idioma de la obra</label>
+    
                 <label for="EdadObra">Edad recomendada de tu obra</label>
                 <input type="number" id="EdadObra" name="EdadObra">
-
+                <label id="errorEdadObra" class="error" for="EdadObra">Error en la edad recomendada de la obra</label>
+    
                 <label for="DescripcionObra">Contanos más de tu obra</label>
                 <textarea id="DescripcionObra" name="DescripcionObra"></textarea>
-
-                <button type="button" onclick="validarFormulario()" class="buttonform" href="formularioenviado.html">Enviar</button>
+                <label id="errorDescripcionObra" class="error" for="DescripcionObra">Error en la descripción de la obra</label>
+    
+                <button type="button" onclick="validarFormulario()" class="buttonform">Enviar</button>
             </form>
         </div>
-    </article>
+    </article>    
     <footer class="footer">
         <div class="footer-izq">
             <p>Patagones 2463 CABA GRUPO ILHSA S.A.</p>

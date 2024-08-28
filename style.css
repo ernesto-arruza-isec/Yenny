@@ -185,6 +185,25 @@ body {
     margin: 10px 0;
 }
 
+.tarjeta2 {
+    width: 200px;
+    height: 320px;
+    background-color: #E0E0E0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tarjeta2 img {
+    width: 90%;
+    height: auto;
+}
+
+.tarjeta2 p {
+    margin: 10px 0;
+}
+
 .mostrar-todo {
     background-color: #E0E0E0;
     color: #00402F;
@@ -418,6 +437,11 @@ textarea {
 .contenedor-formulario-enviado a:hover {
     background-color: #00402F;
     color: white;
+}
+
+.error {
+    color: red;
+    visibility: hidden;
 }
 
 
