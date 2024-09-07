@@ -246,8 +246,8 @@ p {
 }
 
 .banner {
-    width: 513px;
-    height: 226px;
+    width: 45%;
+    height: 16%;
     object-fit: cover;
 }
 
@@ -269,24 +269,31 @@ p {
 .contenedor-columnas {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 20px auto;
+    gap: 3%;
+    margin: 3% auto;
     width: 80%;
 }
 
 .columna {
-    width: 220px;
+    width: 15%;
+    height: 20%;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 2%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 }
 
-h3 {
+.contenedor-columnas h3 {
     color: #00402F;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 100%;
+    margin-bottom: 10%;
+}
+
+.contenedor-columnas p {
+    color: #00402F;
+    font-size: 120%;
+    margin-bottom: 10%;
 }
 
 p {
@@ -296,7 +303,7 @@ p {
 }
 
 .icono-camion {
-    width: 50px;
+    width: 40%;
     height: auto;
 }
 
@@ -494,9 +501,9 @@ h1 {
     align-items: center;
     border: 2px solid #8D041D;
     border-radius: 10px;
-    padding: 10px;
-    width: 900px;
-    height: 200px;
+    padding: 2%;
+    width: 97%;
+    height: 37%;
     background-color: #fff;
 }
 
@@ -560,7 +567,7 @@ h4{
 }
 
 .tapa-libro {
-    width: 350px;
+    width: 50%;
     float: left;
     margin-right: 20px;
     margin-bottom: 40px;
