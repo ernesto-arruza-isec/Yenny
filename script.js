@@ -99,3 +99,94 @@ function validarFormulario() {
         window.location.href = "formularioenviado.html";
     }
 }
+
+var botonMostrarTodo = document.querySelector(".mostrar-todo2");
+
+botonMostrarTodo.addEventListener("click", function() {
+    alert("Estamos trabajando para agregar más libros a esta sección");
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const botonIzq = document.querySelector('.boton-izq');
+    const botonMedio = document.querySelector('.boton-medio');
+    const botonDer = document.querySelector('.boton-der');
+    const tarjetasDiv = document.querySelector('.tarjetas');
+    const botones = document.querySelectorAll('.boton-izq, .boton-medio, .boton-der');
+
+    function actualizarTarjetas(imagenes) {
+        tarjetasDiv.innerHTML = '';
+        imagenes.forEach((imagen, index) => {
+            const tarjeta = document.createElement('div');
+            tarjeta.classList.add('tarjeta');
+
+            const img = document.createElement('img');
+            img.src = `img/libros/libro ${imagen}.webp`;
+            img.alt = `Libro ${imagen}`;
+            tarjeta.appendChild(img);
+
+            const nombreLibro = document.createElement('p');
+            nombreLibro.textContent = `Libro ${imagen}`;
+            tarjeta.appendChild(nombreLibro);
+
+            const precio = document.createElement('p');
+            precio.textContent = `$25.000`;
+            tarjeta.appendChild(precio);
+
+            tarjetasDiv.appendChild(tarjeta);
+        });
+    }
+
+    function seleccionarBoton(boton) {
+        botones.forEach(function (btn) {
+            btn.classList.remove('boton-activo');
+        });
+        boton.classList.add('boton-activo');
+    }
+
+
+    botonIzq.addEventListener('click', function () {
+        seleccionarBoton(botonIzq);
+        const imagenesPopulares = [11, 2, 3];
+        actualizarTarjetas(imagenesPopulares);
+    });
+
+    botonMedio.addEventListener('click', function () {
+        seleccionarBoton(botonMedio);
+        const imagenesIndNacional = [4, 5, 6];
+        actualizarTarjetas(imagenesIndNacional);
+    });
+
+    botonDer.addEventListener('click', function () {
+        seleccionarBoton(botonDer);
+        const imagenesEmergentes = [7, 8, 9];
+        actualizarTarjetas(imagenesEmergentes);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const elementsToAnimate = document.querySelectorAll('.contenedor-izq, .contenedor-der, .banner');
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function checkAnimation() {
+        elementsToAnimate.forEach(element => {
+            if (isElementInViewport(element)) {
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkAnimation);
+    checkAnimation();
+});
