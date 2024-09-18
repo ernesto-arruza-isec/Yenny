@@ -19,6 +19,17 @@ function validarFormulario() {
         window.location.href = "formularioenviado.html";
     }
 }
+setTimeout(function() {
+    document.getElementById("loading").style.display = "none";
+}, 2000);
+setTimeout(function() {
+    document.getElementById("contenedorDelForm").className = "contenedor-formulario-enviado-total.visible";
+    document.getElementById("contenedorDelForm").style.transform = "translateY(0)"
+    document.getElementById("contenedorDelForm").style.opacity = "1"
+    /*
+    transform: translateY(0);
+    opacity: 1;*/
+}, 3000);
 
 function validarFormulario() {
     var validador = true;
