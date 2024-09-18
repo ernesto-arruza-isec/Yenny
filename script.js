@@ -23,7 +23,7 @@ setTimeout(function() {
     document.getElementById("loading").style.display = "none";
 }, 2000);
 setTimeout(function() {
-    document.getElementById("contenedorDelForm").className = "contenedor-formulario-enviado-total.visible";
+    document.getElementById("contenedorDelForm").className = "contenedor-formulario-enviado-total";
     document.getElementById("contenedorDelForm").style.transform = "translateY(0)"
     document.getElementById("contenedorDelForm").style.opacity = "1"
     /*
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const elementsToAnimate = document.querySelectorAll('.contenedor-izq, .contenedor-der, .banner');
+    const elementsToAnimate = document.querySelectorAll('.banner');
 
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();

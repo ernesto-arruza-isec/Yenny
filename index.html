@@ -11,8 +11,55 @@
     <title>Yenny</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <style>
+                @media (max-width: 1190px) {
+            .noNecesario{
+                display: none;
+            }
+
+            .columna{
+                width: 60%;
+                height: 50%;
+            }
+
+            .banner{
+                display: none;
+            }
+
+            .contenedor-principal{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding-left: 33%;
+            }
+
+            .menu a{
+                font-size: 83%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                margin-left: 10%;
+            }
+
+            .superior{
+                height: 70%;
+            }
+            .superior p{
+                margin-right: 40%;
+                text-align: center;
+            }
+
+            .banner-principal{
+                padding-top: 10%;
+            }
+
+            .tarjetas p{
+                display: none;
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="bodyIndex">
     <nav class="navegacion">
         <div class="superior">
             <p>
@@ -80,23 +127,24 @@
                     <a class="mostrar-todo" href="libros 3.html">Mostrar todo</a>
                 </div>
                 <img src="img/banner3.jpg" alt="Banner" class="banner">
+                <img src="img/banner3-mobile.jpg" alt="Banner" class="bannerMobile">
             </div>
         </div>
         <div>
             <div class="contenedor-columnas">
                 <div class="columna">
-                    <h3>Comprá desde cualquier lugar</h3>
-                    <p>Sumá los productos que quieras al carrito</p>
+                    <h3 class="noNecesario">Comprá desde cualquier lugar</h3>
+                    <p class="noNecesario">Sumá los productos que quieras al carrito</p>
                     <img src="img/icono-camion.png" alt="Icono de camión" class="icono-camion">
                 </div>
                 <div class="columna">
-                    <h3>Elegí tu método de pago favorito</h3>
-                    <p>Pagá con tarjeta o en efectivo</p>
+                    <h3 class="noNecesario">Elegí tu método de pago favorito</h3>
+                    <p class="noNecesario">Pagá con tarjeta o en efectivo</p>
                     <img src="img/icono-tarjeta.png" alt="Icono de tarjeta" class="icono-camion">
                 </div>
                 <div class="columna">
-                    <h3>Recibí productos en menos de 48hs</h3>
-                    <p>Tus paquetes están seguros. Tenés el respaldo de Mercado Envíos</p>
+                    <h3 class="noNecesario">Recibí productos en menos de 48hs</h3>
+                    <p class="noNecesario">Tus paquetes están seguros. Tenés el respaldo de Mercado Envíos</p>
                     <img src="img/icono-caja.png" alt="Icono de caja" class="icono-camion">
                 </div>
             </div>
