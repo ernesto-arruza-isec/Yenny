@@ -1,0 +1,171 @@
+[
+    {
+      "nombre": "¿Quién le tiene miedo a Demetrio Latov?",
+      "precio": "$8900",
+      "foto": "img/libros/libro 3.webp",
+      "alt": "Libro 1",
+      "categoria": "Industria Nacional"
+    },
+    {
+      "nombre": "+VIVO QUE EL DIABLO",
+      "precio": "$25.000",
+      "foto": "img/libros/libro 4.webp",
+      "alt": "Libro 2",
+      "categoria": "Más populares"
+    },
+    {
+      "nombre": "La Casa Neville",
+      "precio": "$37.000",
+      "foto": "img/libros/libro 5.webp",
+      "alt": "Libro 3",
+      "categoria": "Nuevos ingresos"
+    },
+    {
+      "nombre": "La Niñera",
+      "precio": "$14.000",
+      "foto": "img/libros/libro 6.webp",
+      "alt": "Libro 4",
+      "categoria": "Industria Nacional"
+    },
+    {
+      "nombre": "Camila O´Gorman",
+      "precio": "$21.000",
+      "foto": "img/libros/libro 7.webp",
+      "alt": "Libro 5",
+      "categoria": "Más populares"
+    },
+    {
+      "nombre": "73 Margaritas",
+      "precio": "$25.000",
+      "foto": "img/libros/libro 8.webp",
+      "alt": "Libro 6",
+      "categoria": "Nuevos ingresos"
+    },
+    {
+      "nombre": "Winnie y Wilbur, el festival de las brujas",
+      "precio": "$18.000",
+      "foto": "img/libros/libro.webp",
+      "alt": "Libro 7",
+      "categoria": "Industria Nacional"
+    },
+    {
+      "nombre": "Alaska contigo",
+      "precio": "$23.000",
+      "foto": "img/libros/libro 2.webp",
+      "alt": "Libro 8",
+      "categoria": "Más populares"
+    },
+    {
+      "nombre": "El Amor después del Desamor",
+      "precio": "$25.000",
+      "foto": "img/libros/libro 17.webp",
+      "alt": "Libro 1",
+      "categoria": "Nuevos ingresos"
+    },
+    {
+      "nombre": "Desbloquea tu próximo nivel",
+      "precio": "$21.000",
+      "foto": "img/libros/libro 18.webp",
+      "alt": "Libro 2",
+      "categoria": "Industria Nacional"
+    },
+    {
+      "nombre": "Espíritu animal",
+      "precio": "$17.000",
+      "foto": "img/libros/libro 19.webp",
+      "alt": "Libro 3",
+      "categoria": "Más populares"
+    },
+    {
+      "nombre": "EL SUTIL ARTE DE QUE (CASI TODO) TE IMPORTE UNA MIERDA",
+      "precio": "$40.000",
+      "foto": "img/libros/libro 20.webp",
+      "alt": "Libro 4",
+      "categoria": "Nuevos ingresos"
+    },
+    {
+      "nombre": "Encendidas",
+      "precio": "$11.000",
+      "foto": "img/libros/libro 21.webp",
+      "alt": "Libro 5",
+      "categoria": "Industria Nacional"
+    },
+    {
+      "nombre": "El Camino del Artista",
+      "precio": "$25.000",
+      "foto": "img/libros/libro 22.webp",
+      "alt": "Libro 6",
+      "categoria": "Más populares"
+    },
+    {
+      "nombre": "Pequeños grandes cambios",
+      "precio": "$8.000",
+      "foto": "img/libros/libro 23.webp",
+      "alt": "Libro 7",
+      "categoria": "Nuevos ingresos"
+    },
+    {
+      "nombre": "La Psicología del Dinero",
+      "precio": "$15.000",
+      "foto": "img/libros/libro 24.webp",
+      "alt": "Libro 8",
+      "categoria": "Industria Nacional"
+    },
+    {
+      "nombre": "Mejor que ayer",
+      "precio": "$25.000",
+      "foto": "img/libros/libro 9.webp",
+      "alt": "Libro 1",
+      "categoria": "Más populares"
+    },
+    {
+      "nombre": "Mejor que en las películas",
+      "precio": "$19.000",
+      "foto": "img/libros/libro 10.webp",
+      "alt": "Libro 2",
+      "categoria": "Nuevos ingresos"
+    },
+    {
+      "nombre": "La Maldición del Amor Verdadero",
+      "precio": "$21.000",
+      "foto": "img/libros/libro 11.webp",
+      "alt": "Libro 3",
+      "categoria": "Industria Nacional"
+    },
+    {
+      "nombre": "La Maestra",
+      "precio": "$10.000",
+      "foto": "img/libros/libro 12.webp",
+      "alt": "Libro 4",
+      "categoria": "Más populares"
+    },
+    {
+      "nombre": "Al Final del Juego",
+      "precio": "$15.000",
+      "foto": "img/libros/libro 13.webp",
+      "alt": "Libro 5",
+      "categoria": "Nuevos ingresos"
+    },
+    {
+      "nombre": "Harry Potter y la Cámara Secreta",
+      "precio": "$37.000",
+      "foto": "img/libros/libro 14.webp",
+      "alt": "Libro 6",
+      "categoria": "Industria Nacional"
+    },
+    {
+      "nombre": "Casa de Fieras",
+      "precio": "$16.000",
+      "foto": "img/libros/libro 15.webp",
+      "alt": "Libro 7",
+      "categoria": "Más populares"
+    },
+    {
+      "nombre": "Alas de Hierro",
+      "precio": "$20.000",
+      "foto": "img/libros/libro 16.webp",
+      "alt": "Libro 8",
+      "categoria": "Nuevos ingresos"
+    }
+  ]
+  

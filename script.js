@@ -201,3 +201,34 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', checkAnimation);
     checkAnimation();
 });
+
+class Libro {
+    constructor(nombre, precio, foto, alt, categoria) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.foto = foto;
+        this.alt = alt;
+        this.categoria = categoria;
+    }
+}
+
+const librosData = [
+    {
+        "nombre": "¿Quién le tiene miedo a Demetrio Latov?",
+        "precio": "$8900",
+        "foto": "img/libros/libro 3.webp",
+        "alt": "Libro 1",
+        "categoria": "Industria Nacional"
+    },
+    {
+        "nombre": "+VIVO QUE EL DIABLO",
+        "precio": "$25.000",
+        "foto": "img/libros/libro 4.webp",
+        "alt": "Libro 2",
+        "categoria": "Más populares"
+    },
+];
+
+const libros = librosData.map(libroData => new Libro(libroData.nombre, libroData.precio, libroData.foto, libroData.alt, libroData.categoria));
+
+console.log(libros);
