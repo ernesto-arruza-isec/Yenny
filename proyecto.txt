@@ -1,0 +1,4 @@
+nueva genero al json.
+Dentro de la pagina select(onchange="cambios") + option
+script tiene una funcion cambios, recupera el value.
+Funcion que carga adentro tiene un if
