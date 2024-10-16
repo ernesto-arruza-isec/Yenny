@@ -202,6 +202,40 @@ document.addEventListener('DOMContentLoaded', function () {
     checkAnimation();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Cargar los libros al iniciar la página
+    cargarLibros();
+});
+
+async function cargarLibros() {
+    try {
+        const response = await fetch('tarjetas.json');
+        const librosData = await response.json();
+
+        // Crear objetos de la clase Libro
+        const libros = librosData.map(libro => new Libro(libro.nombre, libro.precio, libro.foto, libro.alt, libro.categoria));
+
+        // Renderizar todos los libros al cargar la página
+        renderizarLibros(libros);
+
+        // Añadir eventos a los botones de filtrado
+        document.getElementById('btn-industria-nacional').addEventListener('click', () => {
+            cambiarFiltro(libros, 'Industria Nacional');
+        });
+
+        document.getElementById('btn-mas-populares').addEventListener('click', () => {
+            cambiarFiltro(libros, 'Más populares');
+        });
+
+        document.getElementById('btn-nuevos-ingresos').addEventListener('click', () => {
+            cambiarFiltro(libros, 'Nuevos ingresos');
+        });
+    } catch (error) {
+        console.error('Error al cargar los libros:', error);
+    }
+}
+
+// Definir la clase Libro
 class Libro {
     constructor(nombre, precio, foto, alt, categoria) {
         this.nombre = nombre;
@@ -212,23 +246,27 @@ class Libro {
     }
 }
 
-const librosData = [
-    {
-        "nombre": "¿Quién le tiene miedo a Demetrio Latov?",
-        "precio": "$8900",
-        "foto": "img/libros/libro 3.webp",
-        "alt": "Libro 1",
-        "categoria": "Industria Nacional"
-    },
-    {
-        "nombre": "+VIVO QUE EL DIABLO",
-        "precio": "$25.000",
-        "foto": "img/libros/libro 4.webp",
-        "alt": "Libro 2",
-        "categoria": "Más populares"
-    },
-];
+// Función para renderizar los libros en la página
+function renderizarLibros(libros) {
+    const contenedorLibros = document.getElementById('contenedor-libros');
+    contenedorLibros.innerHTML = ''; // Limpiar contenedor
 
-const libros = librosData.map(libroData => new Libro(libroData.nombre, libroData.precio, libroData.foto, libroData.alt, libroData.categoria));
+    libros.forEach(libro => {
+        const libroDiv = document.createElement('div');
+        libroDiv.classList.add('libro');
+        libroDiv.innerHTML = `
+            <img src="${libro.foto}" alt="${libro.alt}">
+            <div class="info-libro">
+                <h4>${libro.nombre}</h4>
+                <p>${libro.precio}</p>
+            </div>
+        `;
+        contenedorLibros.appendChild(libroDiv);
+    });
+}
 
-console.log(libros);
+// Función para filtrar los libros según la categoría seleccionada
+function cambiarFiltro(libros, categoria) {
+    const librosFiltrados = libros.filter(libro => libro.categoria.toLowerCase() === categoria.toLowerCase());
+    renderizarLibros(librosFiltrados);
+}

@@ -3,42 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yenny-Descubrí la mayor variedad de libros en nuestra librería online. Encontrá bestsellers, libros académicos, novelas, infantiles y más. Disfrutá de ofertas exclusivas y envíos a todo el país.">
-    <meta name="keywords" content="Yenny, librería online, libros, bestsellers, novelas, libros académicos, libros infantiles, ofertas en libros, envíos a todo el país, compra de libros, literatura, lectura">
-    <link rel="canonical" href="https://www.yenny-elateneo.com/">
-    <meta name="author" content="Ernesto Arruza">
-    <meta name="publisher" content="Ernesto Arruza">
     <title>Yenny</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <style>
-        @media (max-width: 1190px) {
-    .noNecesario{
-        display: none;
-    }
-    .menu a{
-        font-size: 83%;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        margin-left: 10%;
-    }
-    .superior{
-        height: 70%;
-    }
-    .superior p{
-        margin-right: 40%;
-        text-align: center;
-    }
-}
-</style>
+    <script defer src="script.js"></script> <!-- Importante que esté en defer -->
 </head>
 <body>
     <nav class="navegacion">
         <div class="superior">
-            <p>
-                ENVÍO GRATIS EN PRODUCTOS SELECCIONADOS
-            </p>
+            <p>ENVÍO GRATIS EN PRODUCTOS SELECCIONADOS</p>
         </div>
         <div class="inferior">
             <div class="logo">
@@ -49,8 +21,8 @@
                     <a href="#">LIBROS</a>
                     <ul class="desplegable-contenido">
                         <li><a href="libros.html">Novelas Juveniles</a></li>
-                        <li><a href="libros 2.html">Novelas Románticas</a></li>
-                        <li><a href="libros 3.html">Novelas Emergentes</a></li>
+                        <li><a href="libros2.html">Novelas Románticas</a></li>
+                        <li><a href="libros3.html">Novelas Emergentes</a></li>
                     </ul>
                 </div>
                 <a href="formescritores.html">ESCRITORES EMERGENTES</a>
@@ -62,73 +34,20 @@
             </div>
         </div>
     </nav>
+
     <article class="novelas-romanticas">
         <div class="header">
             <h1>Novelas Juveniles</h1>
-            <button class="btn-filtros">Filtros</button>
-        </div>
-        
-        <div class="contenedor-libros">
-            <a href="comprar.html">
-                <div class="libro">
-                    <img src="img/libros/libro 3.webp" alt="Libro 1">
-                    <div class="info-libro">
-                        <h4>¿Quién le tiene miedo a Demetrio Latov?</h4>
-                        <p>$8900</p>
-                    </div>
-                </div>
-            </a>
-            <div class="libro">
-                <img src="img/libros/libro 4.webp" alt="Libro 2">
-                <div class="info-libro">
-                    <h4>+VIVO QUE EL DIABLO</h4>
-                    <p>$25.000</p>
-                </div>
-            </div>
-            <div class="libro">
-                <img src="img/libros/libro 5.webp" alt="Libro 3">
-                <div class="info-libro">
-                    <h4>La Casa Neville</h4>
-                    <p>$37.000</p>
-                </div>
-            </div>
-            <div class="libro">
-                <img src="img/libros/libro 6.webp" alt="Libro 4">
-                <div class="info-libro">
-                    <h4>La Niñera</h4>
-                    <p>$14.000</p>
-                </div>
-            </div>
-            <div class="libro">
-                <img src="img/libros/libro 7.webp" alt="Libro 5">
-                <div class="info-libro">
-                    <h4>Camila O´Gorman</h4>
-                    <p>$21.000</p>
-                </div>
-            </div>
-            <div class="libro">
-                <img src="img/libros/libro 8.webp" alt="Libro 6">
-                <div class="info-libro">
-                    <h4>73 Margaritas</h4>
-                    <p>$25.000</p>
-                </div>
-            </div>
-            <div class="libro">
-                <img src="img/libros/libro.webp" alt="Libro 7">
-                <div class="info-libro">
-                    <h4>Winnie y Wilbur, el festival de las brujas</h4>
-                    <p>$18.000</p>
-                </div>
-            </div>
-            <div class="libro">
-                <img src="img/libros/libro 2.webp" alt="Libro 8">
-                <div class="info-libro">
-                    <h4>Alaska contigo</h4>
-                    <p>$23.000</p>
-                </div>
+            <div class="filtros-botones">
+                <button id="btn-industria-nacional" class="btn-filtro">Industria Nacional</button>
+                <button id="btn-mas-populares" class="btn-filtro">Más Populares</button>
+                <button id="btn-nuevos-ingresos" class="btn-filtro">Nuevos Ingresos</button>
             </div>
         </div>
+
+        <div id="contenedor-libros" class="contenedor-libros"></div>
     </article>
+
     <footer class="footer">
         <div class="footer-izq">
             <p>Patagones 2463 CABA GRUPO ILHSA S.A.</p>
