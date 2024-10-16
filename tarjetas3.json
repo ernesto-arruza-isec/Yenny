@@ -1,0 +1,58 @@
+[
+    {
+    "nombre": "El Amor después del Desamor",
+    "precio": "$25.000",
+    "foto": "img/libros/libro 17.webp",
+    "alt": "Libro 1",
+    "categoria": "Nuevos ingresos"
+  },
+  {
+    "nombre": "Desbloquea tu próximo nivel",
+    "precio": "$21.000",
+    "foto": "img/libros/libro 18.webp",
+    "alt": "Libro 2",
+    "categoria": "Industria Nacional"
+  },
+  {
+    "nombre": "Espíritu animal",
+    "precio": "$17.000",
+    "foto": "img/libros/libro 19.webp",
+    "alt": "Libro 3",
+    "categoria": "Más populares"
+  },
+  {
+    "nombre": "EL SUTIL ARTE DE QUE (CASI TODO) TE IMPORTE UNA MIERDA",
+    "precio": "$40.000",
+    "foto": "img/libros/libro 20.webp",
+    "alt": "Libro 4",
+    "categoria": "Nuevos ingresos"
+  },
+  {
+    "nombre": "Encendidas",
+    "precio": "$11.000",
+    "foto": "img/libros/libro 21.webp",
+    "alt": "Libro 5",
+    "categoria": "Industria Nacional"
+  },
+  {
+    "nombre": "El Camino del Artista",
+    "precio": "$25.000",
+    "foto": "img/libros/libro 22.webp",
+    "alt": "Libro 6",
+    "categoria": "Más populares"
+  },
+  {
+    "nombre": "Pequeños grandes cambios",
+    "precio": "$8.000",
+    "foto": "img/libros/libro 23.webp",
+    "alt": "Libro 7",
+    "categoria": "Nuevos ingresos"
+  },
+  {
+    "nombre": "La Psicología del Dinero",
+    "precio": "$15.000",
+    "foto": "img/libros/libro 24.webp",
+    "alt": "Libro 8",
+    "categoria": "Industria Nacional"
+  }
+]

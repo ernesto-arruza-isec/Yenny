@@ -2,42 +2,42 @@
   {
       "nombre": "¿Quién le tiene miedo a Demetrio Latov?",
       "precio": "$8900",
-      "foto": "img/libros/libro3.webp",
+      "foto": "img/libros/libro 3.webp",
       "alt": "Libro 1",
       "categoria": "Industria Nacional"
   },
   {
       "nombre": "+VIVO QUE EL DIABLO",
       "precio": "$25.000",
-      "foto": "img/libros/libro4.webp",
+      "foto": "img/libros/libro 4.webp",
       "alt": "Libro 2",
       "categoria": "Más populares"
   },
   {
       "nombre": "La Casa Neville",
       "precio": "$37.000",
-      "foto": "img/libros/libro5.webp",
+      "foto": "img/libros/libro 5.webp",
       "alt": "Libro 3",
       "categoria": "Nuevos ingresos"
   },
   {
       "nombre": "La Niñera",
       "precio": "$14.000",
-      "foto": "img/libros/libro6.webp",
+      "foto": "img/libros/libro 6.webp",
       "alt": "Libro 4",
       "categoria": "Industria Nacional"
   },
   {
       "nombre": "Camila O´Gorman",
       "precio": "$21.000",
-      "foto": "img/libros/libro7.webp",
+      "foto": "img/libros/libro 7.webp",
       "alt": "Libro 5",
       "categoria": "Más populares"
   },
   {
       "nombre": "73 Margaritas",
       "precio": "$25.000",
-      "foto": "img/libros/libro8.webp",
+      "foto": "img/libros/libro 8.webp",
       "alt": "Libro 6",
       "categoria": "Nuevos ingresos"
   }

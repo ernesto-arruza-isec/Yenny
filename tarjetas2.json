@@ -1,0 +1,58 @@
+[
+{
+    "nombre": "Mejor que ayer",
+    "precio": "$25.000",
+    "foto": "img/libros/libro 9.webp",
+    "alt": "Libro 1",
+    "categoria": "Más populares"
+  },
+  {
+    "nombre": "Mejor que en las películas",
+    "precio": "$19.000",
+    "foto": "img/libros/libro 10.webp",
+    "alt": "Libro 2",
+    "categoria": "Nuevos ingresos"
+  },
+  {
+    "nombre": "La Maldición del Amor Verdadero",
+    "precio": "$21.000",
+    "foto": "img/libros/libro 11.webp",
+    "alt": "Libro 3",
+    "categoria": "Industria Nacional"
+  },
+  {
+    "nombre": "La Maestra",
+    "precio": "$10.000",
+    "foto": "img/libros/libro 12.webp",
+    "alt": "Libro 4",
+    "categoria": "Más populares"
+  },
+  {
+    "nombre": "Al Final del Juego",
+    "precio": "$15.000",
+    "foto": "img/libros/libro 13.webp",
+    "alt": "Libro 5",
+    "categoria": "Nuevos ingresos"
+  },
+  {
+    "nombre": "Harry Potter y la Cámara Secreta",
+    "precio": "$37.000",
+    "foto": "img/libros/libro 14.webp",
+    "alt": "Libro 6",
+    "categoria": "Industria Nacional"
+  },
+  {
+    "nombre": "Casa de Fieras",
+    "precio": "$16.000",
+    "foto": "img/libros/libro 15.webp",
+    "alt": "Libro 7",
+    "categoria": "Más populares"
+  },
+  {
+    "nombre": "Alas de Hierro",
+    "precio": "$20.000",
+    "foto": "img/libros/libro 16.webp",
+    "alt": "Libro 8",
+    "categoria": "Nuevos ingresos"
+  }
+]
