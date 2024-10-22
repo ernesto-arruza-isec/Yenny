@@ -762,3 +762,7 @@ width: 30%;
 .btn-filtro:hover {
     background-color: #3a6e61;
 }
+
+header-component{
+    width: 100%;
+}
