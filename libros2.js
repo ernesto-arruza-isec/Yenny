@@ -46,6 +46,7 @@ class Libro {
 function renderizarLibros(libros) {
     const contenedorLibros = document.getElementById('contenedor-libros');
     contenedorLibros.innerHTML = ''; // Limpiar contenedor
+    console.log("ACA");
 
     libros.forEach(libro => {
         const libroDiv = document.createElement('div');

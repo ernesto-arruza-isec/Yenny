@@ -60,34 +60,7 @@
     </style>
 </head>
 <body class="bodyIndex">
-    <nav class="navegacion">
-        <div class="superior">
-            <p>
-                ENVÍO GRATIS EN PRODUCTOS SELECCIONADOS
-            </p>
-        </div>
-        <div class="inferior">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo-de-yenny.png" alt="Logo Yenny"></a>
-            </div>
-            <div class="menu">
-                <div class="desplegable">
-                    <a href="#">LIBROS</a>
-                    <ul class="desplegable-contenido">
-                        <li><a href="libros.html">Novelas Juveniles</a></li>
-                        <li><a href="libros2.html">Novelas Románticas</a></li>
-                        <li><a href="libros3.html">Novelas Emergentes</a></li>
-                    </ul>
-                </div>
-                <a href="formescritores.html">ESCRITORES EMERGENTES</a>
-                <a>MEDIOS DE PAGO</a>
-            </div>
-            <div class="iconos">
-                <img src="img/icono-de-lupa.png" alt="Buscar">
-                <img src="img/icono-de-carrito.png" alt="Carrito">
-            </div>
-        </div>
-    </nav>    
+    <header-component></header-component>
     <article>
         <div class="contenedor-1">
             <img src="img/banner.png" alt="Banner" class="banner-principal">
@@ -100,7 +73,7 @@
                 <div class="tarjetas">
                 </div>
             </div>     
-            <a class="mostrar-todo2">Mostrar todo</a>
+            <a class="mostrar-todo2" onclick="mensajeMostrar()" id="botonMostrarTodo">Mostrar todo</a>
         </div>
          <div>  
             <div class="contenedor-principal">
@@ -164,7 +137,6 @@
         </div>
     </footer>
 
-    <header-component></header-component>
-    <script src="script.js"></script>
+
 </body>
 </html>
