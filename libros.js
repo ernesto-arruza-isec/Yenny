@@ -66,3 +66,36 @@ function cambiarFiltro(libros, categoria) {
     const librosFiltrados = libros.filter(libro => libro.categoria.toLowerCase() === categoria.toLowerCase());
     renderizarLibros(librosFiltrados);
 }
+
+class HeaderComponent extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = 
+      `<nav class="navegacion">
+        <div class="superior">
+            <p>ENVÍO GRATIS EN PRODUCTOS SELECCIONADOS</p>
+        </div>
+        <div class="inferior">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-de-yenny.png" alt="Logo Yenny"></a>
+            </div>
+            <div class="menu">
+                <div class="desplegable">
+                    <a href="#">LIBROS</a>
+                    <ul class="desplegable-contenido">
+                        <li><a href="libros.html">Novelas Juveniles</a></li>
+                        <li><a href="libros2.html">Novelas Románticas</a></li>
+                        <li><a href="libros3.html">Novelas Emergentes</a></li>
+                    </ul>
+                </div>
+                <a href="formescritores.html">ESCRITORES EMERGENTES</a>
+                <a href="mediosdepago.html">MEDIOS DE PAGO</a>
+            </div>
+            <div class="iconos">
+                <img src="img/icono-de-lupa.png" alt="Buscar">
+                <img src="img/icono-de-carrito.png" alt="Carrito">
+            </div>
+        </div>
+    </nav>`;
+    }
+  }
+  customElements.define('header-component', HeaderComponent);

@@ -31,42 +31,29 @@
         margin-right: 40%;
         text-align: center;
     }
+
+    article{
+        padding-right: 20%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-image: url(img/fondo-form.jpg);
+    }
+
+    .contenedor-formulario{
+        background-image: none;
+    }
 }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navegacion">
-        <div class="superior">
-            <p>
-                ENVÍO GRATIS EN PRODUCTOS SELECCIONADOS
-            </p>
-        </div>
-        <div class="inferior">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo-de-yenny.png" alt="Logo Yenny"></a>
-            </div>
-            <div class="menu">
-                <div class="desplegable">
-                    <a href="#">LIBROS</a>
-                    <ul class="desplegable-contenido">
-                        <li><a href="libros.html">Novelas Juveniles</a></li>
-                        <li><a href="libros2.html">Novelas Románticas</a></li>
-                        <li><a href="libros3.html">Novelas Emergentes</a></li>
-                    </ul>
-                </div>
-                <a href="formescritores.html">ESCRITORES EMERGENTES</a>
-                <a>MEDIOS DE PAGO</a>
-            </div>
-            <div class="iconos">
-                <img src="img/icono-de-lupa.png" alt="Buscar">
-                <img src="img/icono-de-carrito.png" alt="Carrito">
-            </div>
-        </div>
-    </nav>
+    <header-component></header-component>
     <article>
         <div class="contenedor-formulario">
             <form id="Formulario">
-                <h2>Queremos saber más de vos</h2>
+                <h2>QUEREMOS SABER MÁS DE VOS</h2>
     
                 <label for="Nombre">Nombre</label>
                 <input type="text" id="Nombre" name="Nombre">

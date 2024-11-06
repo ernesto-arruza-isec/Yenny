@@ -1,3 +1,5 @@
+
+
 function validarFormulario() {
     var nombreUsuario = document.getElementById("Nombre").value;
     var formulario = document.getElementById("Formulario");
@@ -110,3 +112,4 @@ function validarFormulario() {
         window.location.href = "formularioenviado.html";
     }
 }
+

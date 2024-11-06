@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yenny</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="libros.js"></script> <!-- Importante que esté en defer -->
+    <script defer src="libros.js"></script>
+    <style>
+        @media (max-width: 1190px) {
+    .noNecesario{
+        display: none;
+    }
+    .menu a{
+        font-size: 83%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+    }
+    .superior{
+        height: 70%;
+    }
+    .superior p{
+        margin-right: 40%;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 100%;
+    }
+
+    .btn-filtro{
+        width: 30%;
+        height: 50%;
+        font-size: 70%;
+    }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navegacion">
-        <div class="superior">
-            <p>ENVÍO GRATIS EN PRODUCTOS SELECCIONADOS</p>
-        </div>
-        <div class="inferior">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo-de-yenny.png" alt="Logo Yenny"></a>
-            </div>
-            <div class="menu">
-                <div class="desplegable">
-                    <a href="#">LIBROS</a>
-                    <ul class="desplegable-contenido">
-                        <li><a href="libros.html">Novelas Juveniles</a></li>
-                        <li><a href="libros2.html">Novelas Románticas</a></li>
-                        <li><a href="libros3.html">Novelas Emergentes</a></li>
-                    </ul>
-                </div>
-                <a href="formescritores.html">ESCRITORES EMERGENTES</a>
-                <a>MEDIOS DE PAGO</a>
-            </div>
-            <div class="iconos">
-                <img src="img/icono-de-lupa.png" alt="Buscar">
-                <img src="img/icono-de-carrito.png" alt="Carrito">
-            </div>
-        </div>
-    </nav>
-
+    <header-component></header-component>
     <article class="novelas-romanticas">
         <div class="header">
             <h1>Novelas Juveniles</h1>

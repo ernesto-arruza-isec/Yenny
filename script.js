@@ -24,7 +24,7 @@ class HeaderComponent extends HTMLElement {
                     </ul>
                 </div>
                 <a href="formescritores.html">ESCRITORES EMERGENTES</a>
-                <a>MEDIOS DE PAGO</a>
+                <a href="mediosdepago.html">MEDIOS DE PAGO</a>
             </div>
             <div class="iconos">
                 <img src="img/icono-de-lupa.png" alt="Buscar">
