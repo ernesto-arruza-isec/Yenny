@@ -858,3 +858,31 @@ header-component{
         width: 90%; /* En pantallas muy pequeñas, mostrar un solo elemento por fila */
     }
 }
+
+.form-group {
+   padding: 0% 30%;
+}
+
+.btn-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 0%;
+ }
+
+ 
+ .btn-subir{
+ background-color: #E0E0E0;
+    color: #00402F;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+.btn-subir:hover {
+    background-color: #00402F;
+    color: #E0E0E0;
+}
