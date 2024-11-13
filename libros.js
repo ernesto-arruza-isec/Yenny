@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     cargarLibros();
 });
 
+
+
 async function cargarLibros() {
     try {
         const response = await fetch('tarjetas.json');
@@ -42,10 +44,10 @@ class Libro {
     }
 }
 
-// Función para renderizar los libros en la página
+
 function renderizarLibros(libros) {
     const contenedorLibros = document.getElementById('contenedor-libros');
-    contenedorLibros.innerHTML = ''; // Limpiar contenedor
+    contenedorLibros.innerHTML = '';
 
     libros.forEach(libro => {
         const libroDiv = document.createElement('div');
@@ -57,11 +59,18 @@ function renderizarLibros(libros) {
                 <p>${libro.precio}</p>
             </div>
         `;
+
+        if (libro.nombre === "¿Quién le tiene miedo a Demetrio Latov?") {
+            libroDiv.style.cursor = "pointer";
+            libroDiv.addEventListener('click', () => {
+                window.location.href = "comprar.html";
+            });
+        }
+
         contenedorLibros.appendChild(libroDiv);
     });
 }
 
-// Función para filtrar los libros según la categoría seleccionada
 function cambiarFiltro(libros, categoria) {
     const librosFiltrados = libros.filter(libro => libro.categoria.toLowerCase() === categoria.toLowerCase());
     renderizarLibros(librosFiltrados);

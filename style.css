@@ -886,3 +886,10 @@ header-component{
     background-color: #00402F;
     color: #E0E0E0;
 }
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none; /* Ocultamos los mensajes por defecto */
+}

@@ -131,26 +131,33 @@
                 <h2>Contactanos</h2>
             </div>
             <main>
-                <form action="success.html" onsubmit="return enviarCorreo()">
-                    <div class="form-control">
-                        
-                    </div>
+                <form action="formularioenviado.html" onsubmit="return enviarCorreo()">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Correo electronico</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        <label for="email">Correo electrónico</label>
+                        <input type="text" class="form-control" id="email" aria-describedby="emailHelp"
                             placeholder="Ingresa tu email">
+                        <small id="emailError" class="error-message"></small>
+            
                         <label for="nombreUsuario">Nombre</label>
                         <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre">
+                        <small id="nombreError" class="error-message"></small>
+            
                         <label for="apellidoUsuario">Apellido</label>
                         <input type="text" class="form-control" id="apellidoUsuario" placeholder="Apellido">
+                        <small id="apellidoError" class="error-message"></small>
+            
                         <label for="mensajeUsuario">Ingrese su mensaje</label>
                         <textarea class="form-control" id="mensajeUsuario" rows="3"></textarea>
+                        <small id="mensajeError" class="error-message"></small>
                     </div>
+            
                     <div class="btn-form">
-                    <button type="submit" class="btn-subir" href="formularioenviado.html">Enviar</button>
+                        <button type="submit" class="btn-subir">Enviar</button>
                     </div>
                 </form>
             </main>
+            
+            
         </div>
     </article>
     <footer class="footer">

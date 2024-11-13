@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     cargarLibros();
 });
 
+
+
 async function cargarLibros() {
     try {
         const response = await fetch('tarjetas3.json');
@@ -42,10 +44,9 @@ class Libro {
     }
 }
 
-// Función para renderizar los libros en la página
 function renderizarLibros(libros) {
     const contenedorLibros = document.getElementById('contenedor-libros');
-    contenedorLibros.innerHTML = ''; // Limpiar contenedor
+    contenedorLibros.innerHTML = '';
 
     libros.forEach(libro => {
         const libroDiv = document.createElement('div');
@@ -57,6 +58,14 @@ function renderizarLibros(libros) {
                 <p>${libro.precio}</p>
             </div>
         `;
+
+        if (libro.nombre === "El Amor después del Desamor") {
+            libroDiv.style.cursor = "pointer";
+            libroDiv.addEventListener('click', () => {
+                window.location.href = "comprar3.html";
+            });
+        }
+
         contenedorLibros.appendChild(libroDiv);
     });
 }

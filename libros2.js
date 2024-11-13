@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     cargarLibros();
 });
 
+
+
 async function cargarLibros() {
     try {
         const response = await fetch('tarjetas2.json');
@@ -45,8 +47,7 @@ class Libro {
 // Función para renderizar los libros en la página
 function renderizarLibros(libros) {
     const contenedorLibros = document.getElementById('contenedor-libros');
-    contenedorLibros.innerHTML = ''; // Limpiar contenedor
-    console.log("ACA");
+    contenedorLibros.innerHTML = '';
 
     libros.forEach(libro => {
         const libroDiv = document.createElement('div');
@@ -58,6 +59,14 @@ function renderizarLibros(libros) {
                 <p>${libro.precio}</p>
             </div>
         `;
+
+        if (libro.nombre === "Mejor que ayer") {
+            libroDiv.style.cursor = "pointer";
+            libroDiv.addEventListener('click', () => {
+                window.location.href = "comprar2.html";
+            });
+        }
+
         contenedorLibros.appendChild(libroDiv);
     });
 }
